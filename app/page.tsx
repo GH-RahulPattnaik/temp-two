@@ -3,14 +3,104 @@ import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { FiFacebook } from "react-icons/fi";
 import { RiTiktokFill } from "react-icons/ri";
 
-
 export default function Home() {
   return (
     <div>
+
+      {/* SECTION 1 */}
+      <section className="relative h-svh w-full">
+        <img src="/frontpage.png" alt="front-page" className="h-full w-full"/>
+        <div className="flex flex-col md:items-start items-end h-full w-full justify-center absolute top-0 font-bold text-white gap-4 md:px-8 px-4">
+          <h1 className="md:text-5xl text-3xl md:text-start text-end">Complete 100%</h1>
+          <h2 className="md:text-5xl text-3xl md:text-start text-end text-gray-400">PLASTIC FREE</h2>
+          <h4 className="md:text-5xl text-3xl md:text-start text-end">GOODNESS</h4>
+          <button className="text-xs px-10 py-3 bg-slate-400 font-light">SHOP NOW</button>
+        </div>
+      </section>
+
+      {/* SECTION 2 */}
+      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-evenly items-start gap-5">
+        <a href="#" className="px-4 py-8 bg-slate-200 dark:bg-zinc-800 md:max-w-xl w-full flex flex-col gap-6 items-center dark:text-white text-black">
+          <img src="/s2/smoothie1.png" alt="1" className="w-full"/>
+          <h6 className="text-xs">Bright.Light.Fruity.</h6>          
+          <h4 className="font-semibold text-3xl text-center">SUPER DETOX SMOOTHIES</h4>
+          <button className="w-fit px-10 py-2 bg-black text-white">SHOP NOW</button>
+        </a>
+        <a href="#" className="px-4 py-8 bg-slate-200 dark:bg-zinc-800 md:max-w-xl w-full flex flex-col gap-6 items-center dark:text-white text-black">
+          <img src="/s2/smoothie2.png" alt="2" className="w-full"/>
+          <h6 className="text-xs">Cleansing.Refreshing.Flavourful.</h6>          
+          <h4 className="font-semibold text-3xl text-center">ENERGY BOOSTING SMOOTHIES</h4>
+          <button className="w-fit px-10 py-2 bg-black text-white">SHOP NOW</button>
+        </a>        
+      </section>
+
+      {/* SECTION 3 */}
+      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-evenly items-start gap-5 dark:text-white text-black0">
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s3/beetandberry.png" alt="1" /></a>
+          <a href="#"><h1 className="text-center">Beet & Berry</h1></a>
+          <a href="#"><p>From ₹100.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s3/kaleandblue.png" alt="2" /></a>
+          <a href="#"><h1 className="text-center">Kale & Blueberry</h1></a>
+          <a href="#"><p>From ₹110.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s3/rasberryandpineapple.png" alt="3" /></a>
+          <a href="#"><h1 className="text-center">Beet & Berry</h1></a>
+          <a href="#"><p>From ₹130.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s3/strawberryandbanana.png" alt="4" /></a>
+          <a href="#"><h1 className="text-center">Strawberry & Banana</h1></a>
+          <a href="#"><p>From <s className="text-red-500">₹180.00</s> ₹140.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+      </section>
+
+      {/* SECTION 6 */}
+      <h1 className="text-black dark:text-white text-center text-3xl">BEST SELLING SMOOTHIES</h1>
+      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-evenly items-start gap-5 dark:text-white text-black0">
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s6/strawberryandbanana.png" alt="1" /></a>
+          <a href="#"><h1 className="text-center">Strawberry & Banana</h1></a> 
+          <a href="#"><p>From <s className="text-red-500">₹180.00</s> ₹140.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s6/orangeandpumpkin.png" alt="2" /></a>
+          <a href="#"><h1 className="text-center">Orange & Pumpkin</h1></a>
+          <a href="#"><p>From ₹100.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s6/kaleandblue.png" alt="3" /></a>
+          <a href="#"><h1 className="text-center">Kale & Blue</h1></a>
+          <a href="#"><p>From ₹130.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+        <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
+          <a href="#"><img src="/s6/mangoandcoconut.png" alt="4" /></a>
+          <a href="#"><h1 className="text-center">Mango & Coconut</h1></a>
+          <a href="#"><p>From ₹120.00</p></a>
+          <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
+        </div>
+      </section>     
+
+      {/* SECTION 8 */}
+      <section className="px-6 md:px-20 py-10 w-full dark:text-white text-black flex flex-col gap-5">
+        <h1 className="text-start md:text-3xl text-xl">FUEL YOUR FITNESS JOURNEY</h1>
+        <p className="text-start ">Our smoothies provide the necessary nutrients for pre-workout energy, post-workout recovery, and overall well-being. Stay energized, nourished, and ready to achieve your fitness goals with the delicious and healthful smoothies!</p>
+      </section>
+
       {/* Smoothies */}
       <section className="w-screen max-h-max text-white relative flex justify-center">
-        <img src="/smoothies/shakes-1.png" alt="orenge" className="w-full h-fit"/>
-        <div className="flex flex-col items-center gap-6 w-1/3 absolute top-10 font-bold justify-center text-2xl px-10 text-center">
+        <img src="/smoothies/shakes-1.png" alt="orenge" className="w-full h-60"/>
+        <div className="flex flex-col items-center gap-6 md:w-1/3 w-full absolute top-10 font-bold justify-center text-lg md:text-2xl px-10 text-center">
           <a href="#" className="hover:underline underline-offset-4">ENERGY BOOSTING SMOOTHIES</a>
           <a href="#" className="hover:underline underline-offset-4">SUPER DETOX SMOOTHIES</a>
           <a href="#" className="hover:underline underline-offset-4">SUPER GREEN SMOOTHIES</a>
@@ -20,20 +110,20 @@ export default function Home() {
       {/* BLOG */}
       <section className="px-8 py-10 text-black dark:text-white">
         <h1 className="dark:text-white text-center text-3xl text-black py-6">FROM THE BLOG</h1>
-        <div className="w-full max-h-max flex justify-between gap-5">
-          <div className="flex flex-col justify-start gap-5 max-w-sm">
+        <div className="w-full max-h-max flex flex-wrap justify-between gap-9">
+          <div className="flex flex-col justify-start gap-5 w-full md:max-w-sm">
             <img src="/blog-images/blog-1.png" alt="1" className="h-96"/>
             <p className="text-start text-xs">10 july 2023</p>
             <a href="#" className="text-lg font-semibold">POST-WORKOUT RECOVERY: THE POWER OF SMOOTHIES</a>
             <p className="text-sm">ESSENTIAL NUTRIENTS Get post-workout replenishment After a strenuous workout, its crucial to nourish your body with the right nutrients for...</p>
           </div>
-          <div className="flex flex-col justify-start gap-5 max-w-sm">
+          <div className="flex flex-col justify-start gap-5 w-full md:max-w-sm">
             <img src="/blog-images/blog-2.png" alt="2" className="h-96"/>
             <p className="text-start text-xs">10 july 2023</p>
             <a href="#" className="text-lg font-semibold">COLORFUL BREAKFAST CREATIONS</a>
             <p className="text-sm">REVITALISE YOUR HEALTH Breakfast is often considered the most important meal of the day, and what better way to start...</p>
           </div>
-          <div className="flex flex-col justify-start gap-5 max-w-sm">
+          <div className="flex flex-col justify-start gap-5 w-full md:max-w-sm">
             <img src="/blog-images/blog-3.png" alt="3" className="h-96"/>
             <p className="text-start text-xs">10 july 2023</p>
             <a href="#" className="text-lg font-semibold">ANTIOXIDANT-RICH SMOOTHIE BLENDS</a>
