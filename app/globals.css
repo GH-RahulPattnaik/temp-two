@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#discount {
+  @media (min-width: 768px) {
+    width: 48%;
+   }  
+} 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;

@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3 */}
-      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-evenly items-start gap-5 dark:text-white text-black0">
+      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-between items-start gap-5 dark:text-white text-black0">
         <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
           <a href="#"><img src="/s3/beetandberry.png" alt="1" /></a>
           <a href="#"><h1 className="text-center">Beet & Berry</h1></a>
@@ -62,9 +62,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 4 */}
+      <section className="w-full h-full flex flex-nowrap py-16 md:dark:text-white text-black md:px-8 relative">
+        <div className="md:w-1/2 w-full bg-white">
+          <img src="/s4/beetandberry.png" alt="img" className="h-full"/>
+        </div>
+        <div className="w-11/12 flex flex-col gap-5 py-8 md:justify-center h-full items-end absolute pl-4">
+          <h1 className="font-bold md:text-5xl text-3xl text-end">7 DAYS. 7 SMOOTHIES.</h1>
+          <p className="text-end">Order a smoothie for every day of the week <br /> and we will give you the weekend smoothies for free!</p>
+          <button className="w-fit px-10 py-3 dark:bg-zinc-950 dark:hover:bg-black bg-purple-700 hover:bg-purple-950 text-white">SHOP NOW</button>
+        </div>
+      </section>
+
+      {/* SECTION 5 */}
+      <section className="md:px-8 px-4 py-4 text-black flex flex-wrap justify-between gap-5 my-8">
+        <div id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
+          <img src="/s5/image1.png" alt="image1" className="w-full h-full"/>
+          <div className="flex flex-col items-start justify-center md:w-4/6 w-full h-full absolute top-0 px-8 font-bold md:text-2xl text-lg gap-2">
+            <h1 className="">UP TO 15% OFF</h1>
+            <p>DETOX SMOOTHIES</p>
+          </div>
+        </div>
+        <div id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
+          <img src="/s5/image2.png" alt="image2" className="w-full h-full"/>
+          <div className="flex flex-col items-start justify-center md:w-4/6 w-full h-full absolute top-0 px-8 font-bold md:text-2xl text-lg gap-2">
+            <h1 className="">UP TO 30% OFF</h1>
+            <p>ENERGY BOOSTING SMOOTHIES</p>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 6 */}
       <h1 className="text-black dark:text-white text-center text-3xl">BEST SELLING SMOOTHIES</h1>
-      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-evenly items-start gap-5 dark:text-white text-black0">
+      <section className="px-4 md:px-8 py-10 w-full flex flex-wrap justify-between items-start gap-5 dark:text-white text-black">
         <div className="md:w-1/5 w-2/5 flex flex-col gap-3 items-center font-light text-sm">
           <a href="#"><img src="/s6/strawberryandbanana.png" alt="1" /></a>
           <a href="#"><h1 className="text-center">Strawberry & Banana</h1></a> 
@@ -89,10 +119,13 @@ export default function Home() {
           <a href="#"><p>From ₹120.00</p></a>
           <button className="py-3 bg-zinc-900 w-full text-white">VIEW OPTIONS</button>
         </div>
-      </section>     
+      </section>
 
-      {/* SECTION 8 */}
-      <section className="px-6 md:px-20 py-10 w-full dark:text-white text-black flex flex-col gap-5">
+      {/* FOUNDER */}
+      
+
+      {/* FITNESS DESCRIPTION */}
+      <section className="px-6 md:px-16 py-10 w-full dark:text-white text-black flex flex-col gap-5">
         <h1 className="text-start md:text-3xl text-xl">FUEL YOUR FITNESS JOURNEY</h1>
         <p className="text-start ">Our smoothies provide the necessary nutrients for pre-workout energy, post-workout recovery, and overall well-being. Stay energized, nourished, and ready to achieve your fitness goals with the delicious and healthful smoothies!</p>
       </section>
