@@ -24,7 +24,7 @@ export default function CurrencySelector() {
 
   return (
     <div className='bg-transparent'>
-      <select id="currency-selector" value={selectedCurrency} onChange={handleChange} className='px-3 py-2 bg-transparent border dark:border-white border-black'>
+      <select id="currency-selector" value={selectedCurrency} onChange={handleChange} className='px-3 py-2 bg-transparent border border-white'>
         {currencies.map((currency) => (
           <option key={currency.value} value={currency.value} className='bg-transparent text-black'>
             {currency.label}

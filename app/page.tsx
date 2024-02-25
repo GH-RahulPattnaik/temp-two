@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* SECTION 1 */}
       <section className="relative h-svh w-full">
-        <img src="/frontpage.png" alt="front-page" className="h-full w-full"/>
+        <img src="/frontpage.png" alt="front-page" className="h-full w-full bg-cover"/>
         <div className="flex flex-col md:items-start items-end h-full w-full justify-center absolute top-0 font-bold text-white gap-4 md:px-8 px-4">
           <h1 className="md:text-5xl text-3xl md:text-start text-end">Complete 100%</h1>
           <h2 className="md:text-5xl text-3xl md:text-start text-end text-gray-400">PLASTIC FREE</h2>
@@ -76,20 +76,20 @@ export default function Home() {
 
       {/* SECTION 5 */}
       <section className="md:px-8 px-4 py-4 text-black flex flex-wrap justify-between gap-5 my-8">
-        <div id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
+        <a href="#" id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
           <img src="/s5/image1.png" alt="image1" className="w-full h-full"/>
           <div className="flex flex-col items-start justify-center md:w-4/6 w-full h-full absolute top-0 px-8 font-bold md:text-2xl text-lg gap-2">
             <h1 className="">UP TO 15% OFF</h1>
             <p>DETOX SMOOTHIES</p>
           </div>
-        </div>
-        <div id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
+        </a>
+        <a href="#" id="discount" className="md:w-5/12 w-full h-40 md:h-60 relative">
           <img src="/s5/image2.png" alt="image2" className="w-full h-full"/>
           <div className="flex flex-col items-start justify-center md:w-4/6 w-full h-full absolute top-0 px-8 font-bold md:text-2xl text-lg gap-2">
             <h1 className="">UP TO 30% OFF</h1>
             <p>ENERGY BOOSTING SMOOTHIES</p>
           </div>
-        </div>
+        </a>
       </section>
 
       {/* SECTION 6 */}
@@ -122,16 +122,42 @@ export default function Home() {
       </section>
 
       {/* FOUNDER */}
-      
-
-      {/* FITNESS DESCRIPTION */}
-      <section className="px-6 md:px-16 py-10 w-full dark:text-white text-black flex flex-col gap-5">
-        <h1 className="text-start md:text-3xl text-xl">FUEL YOUR FITNESS JOURNEY</h1>
-        <p className="text-start ">Our smoothies provide the necessary nutrients for pre-workout energy, post-workout recovery, and overall well-being. Stay energized, nourished, and ready to achieve your fitness goals with the delicious and healthful smoothies!</p>
+      <section className="h-full w-screen md:relative flex flex-col dark:text-white text-black">
+        <img src="founder.png" alt="founder" className="h-full w-full"/>
+        <div className="flex h-full w-full md:px-10 items-center md:absolute top-0">
+          <div className="md:bg-white md:w-1/2 w-full dark:text-white dark:md:text-zinc-950 flex flex-col md:items-start items-center md:p-8 px-4 py-8 gap-5">
+            <h1 className="md:text-start text-center font-semibold md:text-3xl text-xl">MEET THE FOUNDER</h1>
+            <p className="md:text-start text-center font-light">Imogen Grey, founder of Queenstown Smoothies, shares her origin story, future vision, and what she loves most about our delicious drinks.</p>
+            <button className="w-fit px-10 py-3 text-white bg-zinc-900">READ MORE</button>
+          </div>
+        </div>
       </section>
 
-      {/* Smoothies */}
-      <section className="w-screen max-h-max text-white relative flex justify-center">
+      {/* FITNESS DESCRIPTION */}
+      <section className="px-6 md:px-16 py-12 mb-4 w-full dark:text-white text-black flex flex-col gap-7">
+        <h1 className="text-start md:text-3xl text-xl">FUEL YOUR FITNESS JOURNEY</h1>
+        <p className="text-start md:pr-16">Our smoothies provide the necessary nutrients for pre-workout energy, post-workout recovery, and overall well-being. Stay energized, nourished, and ready to achieve your fitness goals with the delicious and healthful smoothies!</p>
+      </section>
+
+      {/* BEST FOR PRE-WORKOUT AND POST-WORKOUT */}
+      <section className="md:px-8 px-4 w-full max-h-max text-black dark:text-white">
+        <div className="flex flex-wrap items-center md:gap-0 gap-8">
+          <div className="md:w-1/2 w-full h-full">
+            <img src="workout.png" alt="WORKOUT" className="h-full w-full"/>
+          </div>
+          <div className="md:w-1/4 w-full h-1/2 flex flex-col items-center gap-3">
+            <p className="px-5">BEST FOR PRE-WORKOUT</p>
+            <img src="/workout/orangeandpumpkin.png" alt="image1" />
+          </div>
+          <div className="md:w-1/4 w-full h-1/2 flex flex-col items-center gap-3">
+            <p className="px-5">BEST FOR POST-WORKOUT</p>
+            <img src="/workout/peachandpineapple.png" alt="image2" />
+          </div>         
+        </div>
+      </section>
+
+      {/* SMOOTHIES */}
+      <section className="w-screen max-h-max mt-16 md:mt-40 text-white relative -z-0 flex justify-center my-4">
         <img src="/smoothies/shakes-1.png" alt="orenge" className="w-full h-60"/>
         <div className="flex flex-col items-center gap-6 md:w-1/3 w-full absolute top-10 font-bold justify-center text-lg md:text-2xl px-10 text-center">
           <a href="#" className="hover:underline underline-offset-4">ENERGY BOOSTING SMOOTHIES</a>
@@ -166,23 +192,25 @@ export default function Home() {
       </section>
 
       {/* DIRECTION */}
-      <section className="h-3/4 w-screen">
-        <div className="h-full w-full relative ">
-          <img src="/direction-section/map.jpg" alt="map" className="w-full"/>
-          <div className="absolute w-96 z-0 top-10 right-10 px-10 py-7 bg-white flex flex-col justify-center gap-4 items-center">
-            <h1 className="text-center font-semibold text-2xl">LOCATION PICKUP AVAILABLE</h1>
-            <div className="flex flex-col text-center font-light text-sm">
-              <p>ABC Street, Bhubaneswer</p>
-              <p>Mon - Fri , 8.00am - 8.00pm</p>
-              <p>Sat - Sun, 9.00am - 4.00pm</p>
+      <section className="max-h-max w-screen">
+        <div className="max-h-max w-full relative ">
+          <img src="/direction-section/map.jpg" alt="map" className="h-svh w-full"/>
+          <div className="px-10 absolute top-0 md:right-10 w-full h-full flex justify-center items-center md:justify-end">
+            <div className="bg-white flex flex-col gap-6 md:p-7 p-3 items-center">
+              <h1 className="text-center font-semibold text-2xl">LOCATION PICKUP AVAILABLE</h1>
+              <div className="flex flex-col text-center font-light text-sm">
+                <p>ABC Street, Bhubaneswer</p>
+                <p>Mon - Fri , 8.00am - 8.00pm</p>
+                <p>Sat - Sun, 9.00am - 4.00pm</p>
+              </div>
+              <button className="w-fit hover:bg-black bg-zinc-900 text-white px-8 py-2">Get Direction</button>
             </div>
-            <button className="hover:bg-black bg-zinc-900 text-white px-8 py-2">Get Direction</button>
-          </div>
+          </div>          
         </div>
       </section>
 
       {/* FOOTER */}
-      <section className="max-h-max w-full md:px-6 px-3 py-4 dark:text-white text-black bg-zinc-900">
+      <section className="max-h-max w-full md:px-6 px-3 py-4 text-white bg-zinc-800">
         <div className="flex items-start justify-between flex-wrap text-sm gap-4">
           <div className="md:w-1/5 w-full p-4 flex md:items-start items-center flex-col gap-3">
             <a href="#" className="hover:underline underline-offset-4">Shop all</a>
@@ -197,10 +225,10 @@ export default function Home() {
             <a href="#" className="hover:underline underline-offset-4">FAQs</a>
           </div>
           <div className="md:w-1/5 w-full p-4 flex md:justify-start justify-center gap-5">
-            <a href="#" className="text-black dark:text-white"><FiFacebook size={23}/></a>
-            <a href="#" className="text-black dark:text-white"><FaXTwitter size={23}/></a>
-            <a href="#" className="text-black dark:text-white"><FaInstagram size={23}/></a>
-            <a href="#" className="text-black dark:text-white"><RiTiktokFill  size={23}/></a>
+            <a href="#"><FiFacebook size={23}/></a>
+            <a href="#"><FaXTwitter size={23}/></a>
+            <a href="#"><FaInstagram size={23}/></a>
+            <a href="#"><RiTiktokFill  size={23}/></a>
           </div>
           <div className="md:w-1/5 w-full p-4 flex md:justify-start justify-center flex-col gap-5">
             <p className="md:text-start text-center">Be the first to know about our biggest and best sales.</p>

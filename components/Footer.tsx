@@ -3,7 +3,7 @@ import CurrencySelector from "./PaymentFromCountryDropdown";
 
 export default function Footer() {
     return (
-        <div className="dark:text-white dark:bg-zinc-950 bg-slate-400">
+        <div className="text-white bg-zinc-900">
             <div className="w-full h-52 flex flex-col justify-center items-center gap-5">
                 <CurrencySelector />
                 <div className="flex w-full items-center justify-center gap-6">
