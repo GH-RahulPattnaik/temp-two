@@ -16,7 +16,7 @@ const HamburgerMenu = () => {
       <button className="md:hidden" onClick={toggleMenu}>
         {isOpen ? (
         
-        <div className='flex flex-col justify-between items-end h-96 w-72 border border-black max-h-max absolute top-0 left-0 bg-white text-black dark:bg-zinc-800 dark:text-white font-semibold'>
+        <div className='flex flex-col justify-between items-end max-h-max w-72 border border-black absolute top-0 left-0 bg-white text-black dark:bg-zinc-800 dark:text-white font-semibold'>
             <div className='w-full flex flex-col p-5'>
                 <div className='flex justify-end py-4 border-b'><IoClose size={24}/></div>                
                 <div className='flex justify-between items-center py-4 border-b'>
@@ -31,7 +31,7 @@ const HamburgerMenu = () => {
             </div>
             <div className='flex w-full flex-col py-4'>
                 <CurrencySelector/>
-                <h3 className='px-7 py-4 text-start border-t mt-4'>Log in</h3>
+                <h3 className='px-7 pt-4 text-start border-t mt-4'>Log in</h3>
             </div>                    
         </div>
         ) : (

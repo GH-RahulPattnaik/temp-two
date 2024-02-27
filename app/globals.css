@@ -8,6 +8,14 @@
    }  
 } 
 
+#image-sec-1{
+  background-image: url("/public/frontpage.png");
+  position: relative;
+  z-index: 10;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
